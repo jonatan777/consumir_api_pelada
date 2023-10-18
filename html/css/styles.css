@@ -1,0 +1,106 @@
+  *{
+    margin: 0;
+    padding: 0;
+    
+    }
+li {
+  list-style: none;
+  border: 1px solid;
+  padding: 1rem;
+  background-color: rgb(255, 194, 222);
+}
+button{
+  background-color: rgba(72, 163, 255, 0.856);
+  border-color: rgb(218, 207, 136);
+  padding: 2%;
+}
+button:hover{
+  border-color: rgb(245, 120, 120);
+  cursor: pointer;
+}
+.personal-image {
+  text-align: center;
+}
+.personal-image input[type="file"] {
+  display: none;
+}
+.personal-figure {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.personal-avatar {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out .3s;
+}
+.personal-avatar:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.personal-figcaption {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out .3s;
+}
+.personal-figcaption:hover {
+  opacity: 1;
+  background-color: rgba(80, 88, 210, 0.919);
+}
+.personal-figcaption > img {
+  margin-top: 32.5px;
+  width: 50px;
+  height: 50px;
+}
+body{
+ background-color: rgba(197, 202, 220, 0.957);
+}
+#root2{
+  display: flex;
+  justify-content: center;
+}
+#entrada{
+ position: fixed;
+ z-index: -7;
+ transform: rotate(90deg);
+ top: -5%;
+width: 40%;
+}
+Header {
+  position: fixed;
+  top: -5px;
+  width: 100%;
+  z-index: 7;
+}
+@media (max-width: 1500px) {
+    #tabelaEditar{
+      position: relative;
+      left: 4%;
+      top: 20px;
+      padding: 5%;
+    }
+}
+@media (max-width: 900px) {
+ #entrada{ 
+  top: 10%;
+ }
+}
+@media (max-width: 500px) {
+  #entrada{ 
+    top: 20%;
+   }
+   #titulo{
+    position: relative;
+    top: 40px;
+   }
+}

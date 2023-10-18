@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<div id="inicial"></div>
+
+<body>
+  <div id="header"></div>
+ 
+<br>
+<br>
+  <div class="w3-container" id="FormBuscarIagem">
+    <div class="w3-container w3-blue" style="width: 100%;">
+      <h4>Buscar imagem</h4>
+    </div>
+  
+    <div class="w3-container w3-center" style="background-color: #306fe4;">
+     <p>
+      <input name='image' type="file" id="arquivo" onchange="return validarArquivo()" accept="image/png, image/jpeg"/><br>
+     <p>
+     <br>
+      
+      <br><br>
+      <div id="visualizarImagem"></div>
+      <div id="visualizarUrl">
+        <img class="imagem" src="http://via.placeholder.com/350x150" alt="Sua imagem" width="250" height="100">
+      </div>
+      <div id="visualizarRespostaServidor"></div>
+      <br>
+      <p>
+        <input type="submit"  value="Enviar imagem" onclick="salvarImagem()">
+       <p> 
+    </div>      
+  </div> 
+  
+
+</body>                         
+
+
+
+
+
+
+<script src="/javascript/template.js"></script>
+<script src="/javascript/uploadImage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+</html>
