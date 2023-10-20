@@ -99,13 +99,6 @@ const jogador = {
     pontos: pontos
   };
 
-
-
-  
-
-
-
-
   const url = 'http://181.215.135.83:8188/jogadores'
   
   axios.post(url,  jogador, 
@@ -135,9 +128,6 @@ const jogador = {
    console.log(error);
    document.getElementById('visualizarRespostaServidor').innerHTML =  '<h3>'+error+'</h3>'
   });
-
-
-
 }
 
 
