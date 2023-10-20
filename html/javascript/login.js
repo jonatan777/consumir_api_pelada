@@ -16,7 +16,7 @@ function autorizacao(){
         if(usuario.senha == senha){
          
             sessionStorage.setItem("login", usuario.login);
-            window.location = "http://127.0.0.1:5500/index.html"
+            window.location = "https://peladadomaruin.com.br/html/index.html"
         }else {
           document.getElementById("result").innerHTML = `<h3>senha errada!</h3>`
         }

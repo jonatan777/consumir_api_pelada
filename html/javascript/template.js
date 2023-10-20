@@ -6,16 +6,17 @@ if(sessao == null){
 }
 
 
- document.getElementById('inicial').innerHTML = `
-
+ document.getElementById('inicial').innerHTML = 
+ `
+ <html lang="pt-br">
  <head>
-  <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Pelada do maruim</title>
- <link rel="stylesheet" href="/css/styles.css">
- <link rel="stylesheet" href="/css/w3.css">
- <link rel="stylesheet" href="/css/login.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelada do maruim</title>
+  <link rel="stylesheet" href="/html/css/styles.css">
+  <link rel="stylesheet" href="/html/css/w3.css">
+  <link rel="stylesheet" href="/html/css/login.css">
  </head>
  `
 
@@ -23,10 +24,10 @@ if(sessao == null){
  document.getElementById('header').innerHTML = `
  <header class="w3-margin-bottom"> 
  <div class="w3-bar w3-black">
-   <a href="/index.html" class="w3-bar-item w3-button">Inicio</a>
-   <a href="/marcacao/uploadImage.html" class="w3-bar-item w3-button">Upload de Avatar</a>
-   <a href="/marcacao/criarJogador.html" class="w3-bar-item w3-button">Criar Jogador</a>
-   <a href="/marcacao/editarJogador.html" class="w3-bar-item w3-button">Editar Jogador</a>
+   <a href="/html/index.html" class="w3-bar-item w3-button">Inicio</a>
+   <a href="/html/marcacao/uploadImage.html" class="w3-bar-item w3-button">Upload de Avatar</a>
+   <a href="/html/marcacao/criarJogador.html" class="w3-bar-item w3-button">Criar Jogador</a>
+   <a href="/html/marcacao/editarJogador.html" class="w3-bar-item w3-button">Editar Jogador</a>
   
  </div> 
  </header>

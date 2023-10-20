@@ -22,7 +22,7 @@ function buscarGols() {
       </tr>`
     }).join('')
     
-    const table = `<table class="w3-table-all w3-hoverable" style="width: 95%; margin: 4% auto">
+    const table = `<table class="w3-table-all w3-hoverable" style="width: 95%; margin: 1% auto">
       <tr>
         <td>Imagem</td>
         <td>Nome</td>
