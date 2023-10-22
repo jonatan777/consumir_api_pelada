@@ -4,7 +4,7 @@ function buscarGols() {
 
     const root = document.getElementById('root')
     // const url = 'https://randomuser.me/api/?results=10';
-    const url = 'http://181.215.135.83:8188/jogadores_hibernate/gols';
+    const url = 'https://apipelada.shop/jogadores_hibernate/gols';
     
     fetch(url)
     .then((resp) => resp.json())
@@ -41,8 +41,4 @@ function buscarGols() {
     console.log(error);
     });
     
-    }
-    
-    
-    
-    
+    }   

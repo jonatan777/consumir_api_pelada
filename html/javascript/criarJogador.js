@@ -1,7 +1,7 @@
 
 
 if(sessao == null || sessao == "não logado"){
-    window.location = "https://www.peladadomaruin.com.br/html/marcacao/login.html"
+    window.location = "/marcacao/login.html"
 }
 
 

@@ -6,7 +6,8 @@ function autorizacao(){
     console.log(user)
     console.log(senha)
    
-    const url = `http://181.215.135.83:8188/users/get/jogador/${user}`;
+    const url = `https://apipelada.shop/users/get/jogador/${user}`;
+    //https://apipelada.shop/users/get/jogador/${user}
 
     fetch(url)
     .then((resp) => resp.json())
@@ -16,7 +17,7 @@ function autorizacao(){
         if(usuario.senha == senha){
          
             sessionStorage.setItem("login", usuario.login);
-            window.location = "https://peladadomaruin.com.br/html/index.html"
+            window.location = "/index.html"
         }else {
           document.getElementById("result").innerHTML = `<h3>senha errada!</h3>`
         }

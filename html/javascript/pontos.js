@@ -6,7 +6,7 @@ function buscarPontos() {
 
 const root = document.getElementById('root')
 // const url = 'https://randomuser.me/api/?results=10';
-const url = 'http://181.215.135.83:8188/jogadores_hibernate/pontos';
+const url = 'https://apipelada.shop/jogadores_hibernate/pontos';
 
 fetch(url)
 .then((resp) => resp.json())

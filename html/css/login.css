@@ -55,9 +55,9 @@ body {
 .card-footer .submit{
     width: 100%;
     height: 40px;
-    background-color: #2f2470;
+    background-color: rgba(72, 163, 255, 0.856);
     border:none;
-    color:#e1e1e1;
+    color:#00000f;
     margin: 10px 0;
 }
 .card-footer a {

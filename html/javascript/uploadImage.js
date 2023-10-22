@@ -26,7 +26,7 @@ function validarArquivo(){
             reader.onload = function(e) {
                  
               document.getElementById('visualizarImagem').innerHTML = '<img class="imagem" src='+e.target.result+' alt="Sua imagem" width="350" height="150">';
-              document.getElementById('visualizarUrl').innerHTML =  '<p>http://181.215.135.83:8189/get/image/'+arquivoInput.files[0].name+'</p>'
+              document.getElementById('visualizarUrl').innerHTML =  '<p>https://apipelada.shop/get/image/'+arquivoInput.files[0].name+'</p>'
               
             
            //   var resultado = document.getElementById('form');
@@ -61,7 +61,7 @@ function salvarImagem(){
     var arquivoInput = document.getElementById('arquivo');
     previaDaImagem = document.querySelector('.imagem');
     var caminhoArquivo = arquivoInput.value;
-    const url = 'http://181.215.135.83:8188/upload/image'
+    const url = 'https://apipelada.shop/upload/image'
   
     const formData = new FormData();
     formData.append('image', arquivoInput.files[0]);   

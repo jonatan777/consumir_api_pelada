@@ -2,7 +2,7 @@
 
 if(sessao == null || sessao == "não logado"){
 
-    window.location = "https://www.peladadomaruin.com.br/html/marcacao/login.html"
+    window.location = "/marcacao/login.html"
 }
 
 
@@ -15,7 +15,7 @@ if(sessao == null || sessao == "não logado"){
  */ 
 
 const root = document.getElementById('root')
-const url = 'http://181.215.135.83:8189/jogadores';
+const url = 'https://apipelada.shop/jogadores';
 
 fetch(url)
 	.then((resp) => resp.json())
@@ -64,7 +64,7 @@ function editar(id) {
 
 	root.innerHTML = '';
 
-	const url = `http://181.215.135.83:8188/jogadores/${id}`;
+	const url = `https://apipelada.shop/jogadores/${id}`;
 	fetch(url)
 		.then((resp) => resp.json())
 		.then(function (data) {
@@ -163,7 +163,7 @@ function salvarEdicao(id) {
 
 
 
-	const url = `http://181.215.135.83:8188/jogadores/${id}`
+	const url = `https://apipelada.shop/jogadores/${id}`
   
 	axios.put(url,  jogador, 
 		 { headers: {'Content-Type': 'application/json'}},
@@ -195,7 +195,7 @@ function salvarEdicao(id) {
 
 
 function deleteJogador(id){
-const url = `http://181.215.135.83:8188/jogadores/${id}`
+const url = `https://apipelada.shop/jogadores/${id}`
 var re = confirm("Excluir jogador?");
 if(re == false){
 location.reload();
@@ -205,23 +205,10 @@ location.reload();
     .then(response => document.getElementById('root').innerHTML =  `
 	 <h1 class="w3-blue">excluído com sucesso!<h1><br>
 	 <button class="w3-margin" onclick="redirectTime()">recarregar pagina</button>
-
-	 
 	 `)
     .catch(error => {
 		document.getElementById('visualizarRespostaServidor').innerHTML =  `Error: ${error.message}`;
-
         console.error('There was an error!', error);
     });
-
-	 
-	}  
-	
+	}  	
 }
-
-
-function redirectTime(){
-	location.reload() = "editarJogador.html"
-}
-
-

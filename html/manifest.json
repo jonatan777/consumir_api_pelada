@@ -1,0 +1,28 @@
+
+{
+    "name": "Pelada Maruim",
+    "lang": "pt-br",
+    "short_name": "pelada",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "start_url": "/?utm_source=homescreen",
+    "scope": "/",
+    "description": "aplicativo gerência um grupo de futebol",
+    "icons": [
+      {          
+        "src": "/images/img_fundo/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/images/img_fundo/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+    
+  }
