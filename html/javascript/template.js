@@ -43,11 +43,12 @@ if(sessao == null){
  `
 
  document.getElementById('footer').innerHTML = `
-<div class="footer">
-<h1>Web Designer</h1>
-<h1>www.desenvolvimentowebfreelancer.com/</h1> 
-<h1>jonataneduardo777@gmail.com</h1>
-<h1>(81)98819-0488</h1>
-
+ <div class="w3-container w3-margin w3-padding-16">
+ <br>
+ <br>
+<p>Web Designer</p>
+<p>www.desenvolvimentowebfreelancer.com/</p> 
+<p>jonataneduardo777@gmail.com</p>
+<p>(81)98819-0488</p>
 </div>
  `
