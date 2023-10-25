@@ -1,13 +1,7 @@
-
-
 if(sessao == null || sessao == "não logado"){
 
     window.location = "/marcacao/login.html"
 }
-
-
-
-
 /*
  * 
  * quando a pagina e carrega é preenchida uma tabela com dados da api
@@ -21,7 +15,6 @@ fetch(url)
 	.then((resp) => resp.json())
 	.then(function (data) {
 		let jogadores = data;
-	
 		const tableBody = jogadores.map((jogador) => {
 			return `
     <tr>
@@ -54,14 +47,12 @@ fetch(url)
 	.catch(function (error) {
 		console.log(error);
 	});
-
 /**
  * 
  * a partir da tabela preenchida envia-se um id para fazer upgrade no objeto jogador atravez de um Form
  * 
  */ 
 function editar(id) {
-
 	root.innerHTML = '';
 
 	const url = `https://apipelada.shop/jogadores/${id}`;
@@ -71,9 +62,7 @@ function editar(id) {
 			let jogador = data;
 
 			document.getElementById("FormEditar").innerHTML = `
-
 <br>
-
    <div class="w3-container" style="width: 80%; margin: 4% auto;">
 
        <div class="w3-container w3-blue">
@@ -128,14 +117,11 @@ function editar(id) {
 			console.log(error);
 		});
 }
-
-
 /*
  * depois de fazer as modificações no objeto e chamado o metodo salvarEdicao() com o (id) do objeto modificado 
  * para ser enviado para a API.
  * se tudo estiver certo a resposta da API sera impresa na tela com o objeto modificado.
  */ 
-
 function salvarEdicao(id) {
 	var imagem = document.getElementById('imagem').value
 	var nome = document.getElementById('nome').value
@@ -160,9 +146,6 @@ function salvarEdicao(id) {
 		gols: gols,
 		pontos: pontos
 	};
-
-
-
 	const url = `https://apipelada.shop/jogadores/${id}`
   
 	axios.put(url,  jogador, 
@@ -172,7 +155,6 @@ function salvarEdicao(id) {
 	console.log(response.data);
     document.getElementById('visualizarRespostaServidor').innerHTML =  ''
 	 document.getElementById('FormEditar').innerHTML = `  
-	
 	 <div class="w3-container w3-center" style="width:50%; margin: 4% auto;">
 	 <h3>jogador modificado com sucesso</h3>
 	 <div class="w3-card-4 w3-center w3-margin">
@@ -190,16 +172,13 @@ function salvarEdicao(id) {
 	 console.log(error);
 	 document.getElementById('visualizarRespostaServidor').innerHTML =  '<h3>'+error+'</h3>'
 	});
-
 }
-
 
 function deleteJogador(id){
 const url = `https://apipelada.shop/jogadores/${id}`
 var re = confirm("Excluir jogador?");
 if(re == false){
 location.reload();
-	
 }else if(re == true){
   axios.delete(url)
     .then(response => document.getElementById('root').innerHTML =  `

@@ -1,15 +1,8 @@
-
-
 if(sessao == null || sessao == "não logado"){
     window.location = "/marcacao/login.html"
 }
 
-
-
-
 document.getElementById("Form").innerHTML = `
-
-
 <br>
 <div class="w3-container" style="width: 80%; margin: 4% auto;">
 
@@ -72,7 +65,6 @@ document.getElementById("Form").innerHTML = `
 `;
 
 function salvarJogador(){
-
 // const fileInput = document.querySelector("#fileInput");
 var imagem = document.getElementById('imagem').value
 var nome = document.getElementById('nome').value
@@ -84,7 +76,6 @@ var derrotas = document.getElementById('derrotas').value
 var expulsao = document.getElementById('expulsao').value
 var gols = document.getElementById('gols').value
 var pontos = vitorias * 3 + parseInt(empates);
-
 
 const jogador = {
     imagen: imagem,
@@ -99,7 +90,7 @@ const jogador = {
     pontos: pontos
   };
 
-  const url = 'http://181.215.135.83:8188/jogadores'
+  const url = 'https://apipelada.shop/jogadores'
   
   axios.post(url,  jogador, 
       { headers: {'Content-Type': 'application/json',}},
@@ -129,5 +120,3 @@ const jogador = {
    document.getElementById('visualizarRespostaServidor').innerHTML =  '<h3>'+error+'</h3>'
   });
 }
-
-

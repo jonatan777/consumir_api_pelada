@@ -73,7 +73,6 @@ body{
  position: relative;
  left: 5px;
 }
-
 Header {
   position: fixed;
   top: -5px;
@@ -81,7 +80,6 @@ Header {
   z-index: 7;
 }
 #footer{
-    
     left: 0;
     bottom: 0;
     width: 100%;
@@ -90,7 +88,6 @@ Header {
     color: white;
     text-align: left;
     font-size: 20px;
- 
 }
 @media (max-width: 1500px) {
     #tabelaEditar{
