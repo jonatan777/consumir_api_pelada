@@ -38,8 +38,9 @@ if(sessao == null){
    <a href="/marcacao/editarJogador.html" class="w3-bar-item w3-button">Editar Jogador</a>
    </div> 
  </header>
+ <h3 class="w3-margin-bottom w3-bar-item w3-blue w3-center" id="titulo">Pelada do maruim &nbsp;&nbsp;admin:&nbsp;&nbsp;${sessao}</h3>
+
  <br>
- <h3 class="w3-margin-bottom w3-bar-item w3-blue w3-center w3-padding-16" id="titulo">Pelada do maruim &nbsp;&nbsp;admin:&nbsp;&nbsp;${sessao}</h3>
  `
 
  document.getElementById('footer').innerHTML = `
@@ -47,7 +48,7 @@ if(sessao == null){
  <br>
  <br>
 <p>Web Designer</p>
-<p>www.desenvolvimentowebfreelancer.com/</p> 
+<a href="https://www.desenvolvimentowebfreelancer.com"><p>www.desenvolvimentowebfreelancer.com</p></a>
 <p>jonataneduardo777@gmail.com</p>
 <p>(81)98819-0488</p>
 </div>

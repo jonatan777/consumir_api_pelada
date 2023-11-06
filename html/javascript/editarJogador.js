@@ -9,7 +9,8 @@ if(sessao == null || sessao == "não logado"){
  */ 
 
 const root = document.getElementById('root')
-const url = 'https://apipelada.shop/jogadores';
+const url = 'https://apipelada.shop/jogadores_hibernate/nome';
+        
 
 fetch(url)
 	.then((resp) => resp.json())
