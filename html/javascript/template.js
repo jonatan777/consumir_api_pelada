@@ -48,7 +48,7 @@ if(sessao == null){
  <br>
  <br>
 <p>Web Designer</p>
-<a href="https://www.desenvolvimentowebfreelancer.com"><p>www.desenvolvimentowebfreelancer.com</p></a>
+<a href="https://desenvolvimentowebfreelancer.com"><p>desenvolvimentowebfreelancer.com</p></a>
 <p>jonataneduardo777@gmail.com</p>
 <p>(81)98819-0488</p>
 </div>
